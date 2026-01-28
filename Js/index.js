@@ -3,19 +3,19 @@
 // ============================
 const testimonials = [
     {
-        name: "John Doe",
+        name: "Md Sanaullah",
         position: "CEO, Tech Company",
         message: "Outstanding service and excellent results. Highly recommended!",
         rating: 5
     },
     {
-        name: "Jane Smith",
+        name: "Md Samiullah",
         position: "Manager, Finance Corp",
         message: "Professional team that delivers beyond expectations.",
         rating: 5
     },
     {
-        name: "Mike Johnson",
+        name: "Md Rizwanullah",
         position: "Founder, Startup Hub",
         message: "Best investment for our business growth.",
         rating: 5
@@ -134,3 +134,4 @@ if (document.readyState === 'loading') {
 } else {
     addScrollAnimation();
 }
+
