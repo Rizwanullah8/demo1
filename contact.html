@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Responsive Website</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="asset/bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">MyWebsite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-50">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold">Get In Touch</h1>
+                    <p class="lead">Have questions? We'd love to hear from you. Send us a message!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="contact-info py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="info-card card border-0 shadow-sm text-center h-100">
+                        <div class="card-body">
+                            <div class="info-icon mb-3">📍</div>
+                            <h5 class="card-title fw-bold">Address</h5>
+                            <p class="card-text text-muted">
+                                123 Business Street<br>
+                                New York, NY 10001<br>
+                                United States
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="info-card card border-0 shadow-sm text-center h-100">
+                        <div class="card-body">
+                            <div class="info-icon mb-3">📞</div>
+                            <h5 class="card-title fw-bold">Phone</h5>
+                            <p class="card-text text-muted">
+                                Main: +1 (555) 123-4567<br>
+                                Support: +1 (555) 123-4568<br>
+                                Toll-free: 1-800-MYSITE
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="info-card card border-0 shadow-sm text-center h-100">
+                        <div class="card-body">
+                            <div class="info-icon mb-3">✉️</div>
+                            <h5 class="card-title fw-bold">Email</h5>
+                            <p class="card-text text-muted">
+                                General: info@mywebsite.com<br>
+                                Support: support@mywebsite.com<br>
+                                Sales: sales@mywebsite.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="info-card card border-0 shadow-sm text-center h-100">
+                        <div class="card-body">
+                            <div class="info-icon mb-3">⏰</div>
+                            <h5 class="card-title fw-bold">Business Hours</h5>
+                            <p class="card-text text-muted">
+                                Mon - Fri: 9:00 AM - 6:00 PM<br>
+                                Sat: 10:00 AM - 4:00 PM<br>
+                                Sun: Closed
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-center fw-bold mb-5">Send us a Message</h2>
+                    <form id="contactPageForm" class="contact-form">
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label for="firstName" class="form-label">First Name *</label>
+                                <input type="text" class="form-control" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastName" class="form-label">Last Name *</label>
+                                <input type="text" class="form-control" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" name="phone">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject *</label>
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="How can we help?" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="serviceType" class="form-label">Service Type</label>
+                            <select class="form-select" id="serviceType" name="serviceType">
+                                <option value="">Select a service...</option>
+                                <option value="web-design">Web Design</option>
+                                <option value="web-development">Web Development</option>
+                                <option value="ecommerce">E-Commerce</option>
+                                <option value="mobile">Mobile App</option>
+                                <option value="seo">SEO & Marketing</option>
+                                <option value="maintenance">Maintenance & Support</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea class="form-control" id="message" name="message" rows="6" placeholder="Tell us about your project..." required></textarea>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="privacy" required>
+                            <label class="form-check-label" for="privacy">
+                                I agree to the privacy policy and terms of service *
+                            </label>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Find Us</h2>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1234567890!2d-74.00601!3d40.71282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e50c41f1%3A0x1234567890!2s123%20Business%20Street%2C%20New%20York!5e0!3m2!1sen!2sus!4v1234567890" width="100%" height="400" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Frequently Asked Questions</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    What is the typical timeline for a web project?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Most web projects take between 4-12 weeks depending on complexity. We'll provide a detailed timeline during the initial consultation.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Do you offer ongoing support?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes! We offer various maintenance and support packages. Our 24/7 support is available to help with any issues.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    What payment methods do you accept?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We accept all major credit cards, bank transfers, and PayPal. Flexible payment plans are available for larger projects.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Can you help with SEO?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolutely! SEO is built into all our web projects. We also offer dedicated SEO and digital marketing services.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    How can I track my project progress?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We provide regular updates and access to a project management portal where you can track progress in real-time.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Follow Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="row g-4 text-center">
+                        <div class="col-6 col-md-4">
+                            <a href="#" class="social-link">
+                                <div class="social-icon">f</div>
+                                <p class="fw-bold">Facebook</p>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <a href="#" class="social-link">
+                                <div class="social-icon">𝕏</div>
+                                <p class="fw-bold">Twitter</p>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <a href="#" class="social-link">
+                                <div class="social-icon">in</div>
+                                <p class="fw-bold">LinkedIn</p>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <a href="#" class="social-link">
+                                <div class="social-icon">📷</div>
+                                <p class="fw-bold">Instagram</p>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <a href="#" class="social-link">
+                                <div class="social-icon">▶</div>
+                                <p class="fw-bold">YouTube</p>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <a href="#" class="social-link">
+                                <div class="social-icon">💬</div>
+                                <p class="fw-bold">Discord</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta bg-primary text-white py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-3">Let's Start Your Project Today</h2>
+            <p class="lead mb-4">Send us your inquiry and let's discuss how we can help you succeed</p>
+            <a href="#contact-form" class="btn btn-light btn-lg">Scroll to Form</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2026 MyWebsite. All rights reserved.</p>
+            <div class="social-links mt-3">
+                <a href="#" class="text-white me-3">Facebook</a>
+                <a href="#" class="text-white me-3">Twitter</a>
+                <a href="#" class="text-white">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="asset/bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="Js/index.js"></script>
+    <script>
+        // Contact Form Handler
+        document.getElementById('contactPageForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            
+            // Show success message
+            alert(`Thank you ${firstName} ${lastName}! Your message has been sent successfully. We'll get back to you at ${email} shortly.`);
+            
+            // Reset form
+            this.reset();
+        });
+    </script>
+</body>
+</html>
